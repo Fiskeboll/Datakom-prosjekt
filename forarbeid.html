@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="x-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Arduino: Lær selv!</title>
+    <script src="libraries/socket.io.js" defer></script><!--Load Socket.io library-->
+
+
+</head>
+
+<body>
+<nav>
+    <!-- Name on the page you are on -->
+    <div class="logo">
+        <h4>Forarbeid</h4>
+    </div>
+    <!-- List of links in the navigator -->
+    <ul class="nav-links">
+        <li>
+            <a href="http://localhost:63342/IELET2001/index.html?_ijt=2kc0kkloj0p6e6mfqplb4em4s7">Hjem</a>
+        </li>
+        <li>
+            <!-- The dropdown button -->
+            <div class="dropdown">
+                <button class="dropbtn">Oppgaver</button>
+                <div class="dropdown-content">
+                    <a href="http://localhost:63342/IELET2001/Oppgave1.html?_ijt=4k2q3nmc77i70rh6ac65ahl442">Oppgave 1</a>
+                    <a href="http://localhost:63342/IELET2001/Oppgave2.html?_ijt=ph1fn6tgop00318gme437kv86s">Oppgave 2</a>
+                    <a href="http://localhost:63342/IELET2001/Oppgave3.html?_ijt=ph1fn6tgop00318gme437kv86s">Oppgave 3</a>
+                </div>
+            </div>
+        </li>
+        <li>
+            <a href="http://localhost:63342/IELET2001/hjelp.html?_ijt=6g4emsj6dogktkduuie0uhhcfv">Hjelp</a>
+        </li>
+    </ul>
+
+    <!-- The hamburger icon -->
+    <div class="burger">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+    </div>
+
+</nav>
+
+
+<main>
+    <div class="oppgavetekst">
+        <h2>Enkle regneoppgaver</h2>
+        Gjør disse oppgavene før du starter på oppgave 1 for å få en bedre forståelse for teorien bak
+        målingene du skal utførere senere. De er relativt enkle å utføre og du vil få beskjed om du har
+        fått rett eller galt svar fortløpende.
+        <br>
+        <br>
+
+        <p> &nbsp 1. Hva er resistansverdien over terminalene?</p>
+        <br>
+        <select name="Svar1" id="svar1" class="svar">
+            <option value="svar">Svar</option>
+            <option value="20,1">20,1 Ω</option>
+            <option value="23,4">23,4 Ω</option>
+            <option value="24,4">24,4 Ω</option>
+        </select>
+        <img class="bildeforarbeid" src="forarbeid1.png">
+
+        <br><br><br><br><br><br><br><br><br><br><br>
+        <p>&nbsp 2. Et punkt x har har spenningen -5V referert til jord. Et annet punkt y har spenningen
+            +8V referert til jord. Hva er spenningen U_xy? </p>
+        <br>
+        <select name="Svar2" id="svar2" class="svar">
+            <option value="svar">Svar</option>
+            <option value="-13V">-13V</option>
+            <option value="13V">13V</option>
+            <option value="3V">3V</option>
+        </select>
+
+        <br><br>
+        <p>&nbsp 3. Hvor stor effekt omsettes i R_last?</p>
+        <br>
+        <select name="Svar3" id="svar3" class="svar">
+            <option value="svar">Svar</option>
+            <option value="45W">45W</option>
+            <option value="37W">37W</option>
+            <option value="35W">35W</option>
+        </select>
+        <img class="bildeforarbeid" src="forarbeid2.png">
+
+        <br><br><br><br><br><br><br><br><br><br><br>
+        <p>&nbsp 4. Hva er kortslutningsstrømmen til koblingen?</p>
+        <br>
+        <select name="Svar3" id="svar3" class="svar">
+            <option value="svar">Svar</option>
+            <option value="4mA">4mA</option>
+            <option value="3,74mA">3,74mA</option>
+            <option value="4,3mA">4,3mA</option>
+        </select>
+        <img class="bildeforarbeid" src="forarbeid3.png">
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+    </div>
+
+
+
+
+
+
+
+
+
+</main>
+
+<script src="app.js"></script>
+</body>
+
+</html>
