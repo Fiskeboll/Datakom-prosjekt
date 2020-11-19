@@ -36,21 +36,25 @@ function darkModeFunction() {
     var navbar = document.getElementById('navbar');
     navbar.classList.toggle("darkModeNav");
 
+    var tipsbtn = document.getElementById("tipsButton");
+    tipsbtn.classList.toggle("darkModeTips");
+
 }
 
 
 //Strings containing tips to the different tasks
 var counter = 0;
-const tips1 = "Har du riktig verdi på resistansene? Du skal måle over en 10kΩ resistans, den andre resistansen skal være 1kΩ.\n"
-const tips2 = "Har du husket å definere verdien for spenning som en float?\n"
-const tips3 = "Har du husket at avlest verdi er en integer? \n"
-const tips4 = "Omgjøringsformel for spenning: input_voltage = (analog_value * 5.0) / 1024.0 \n"
+const tips101 = "Har du riktig verdi på resistansene? Du skal måle over en 10kΩ resistans, den andre resistansen skal være 1kΩ.\n"
+const tips105 = "Har du brukt en ADC-pinne?\n"
+const tips102 = "Har du husket å definere verdien for spenning som en float?\n"
+const tips103 = "Har du husket at avlest verdi er en integer? \n"
+const tips104 = "Omgjøringsformel for spenning: input_voltage = (analog_value) / 1024.0 \n"
 
-const tips5 = "Har du riktig formel for å regne ut temperatur? Det finnes mye tips og hjelp på nettet som kan hjelpe med dette."
-const tips6 = "Temperaturen skal være et heltall, altså en integer. "
+const tips201 = "Har du riktig formel for å regne ut temperatur? Det finnes mye tips og hjelp på nettet som kan hjelpe med dette."
+const tips202 = "Temperaturen skal være et heltall, altså en integer. "
 
-const tips7 = "Har du riktig formel for å regne ut spenning over photoresistoren?"
-const tips8 = "Spenningen over photoresistoren skal være et heltall, altså integer"
+const tips301 = "Har du riktig formel for å regne ut spenning over photoresistoren?"
+const tips302 = "Spenningen over photoresistoren skal være et heltall, altså integer"
 
 
 //Tips for the first task. The counter registers each click on the tips button and
@@ -58,16 +62,27 @@ const tips8 = "Spenningen over photoresistoren skal være et heltall, altså int
 function tipsFunction1() {
 
     if (counter == 1) {
-        var x = document.getElementById("tips").innerHTML = "<li>"+tips1+"</li>";
+        var x = document.getElementById("tips").innerHTML = "<li>"+tips101+"</li>";
     }
     if (counter == 2){
-        var x = document.getElementById("tips").innerHTML +="<li>"+tips2+"</li>";
+        var x = document.getElementById("tips").innerHTML +="<li>"+tips105+"</li>";
     }
     if (counter == 3){
-        var x = document.getElementById("tips").innerHTML += "<li>"+tips3+"</li>";
+        var x = document.getElementById("tips").innerHTML +="<li>"+tips102+"</li>";
     }
     if (counter == 4){
-        var x = document.getElementById("tips").innerHTML += "<li>"+tips4+"</li>";
+        var x = document.getElementById("tips").innerHTML += "<li>"+tips103+"</li>";
+    }
+    if (counter == 5){
+        var x = document.getElementById("tips").innerHTML += "<li>"+tips104+"</li>";
+    }
+    if (counter == 6){
+        var img = document.createElement("img");
+
+        img.src = "arduino spenningsdeling.png";
+        var src = document.getElementById("tips");
+
+        src.appendChild(img);
     }
     counter += 1;
 
@@ -84,10 +99,21 @@ function tipsFunction1() {
 function tipsFunction2() {
 
     if (counter == 1) {
-        var x = document.getElementById("tips").innerHTML = "<li>"+tips5+"</li>";
+        var x = document.getElementById("tips").innerHTML = "<li>"+tips201+"</li>";
     }
     if (counter == 2){
-        var x = document.getElementById("tips").innerHTML +="<li>"+tips6+"</li>";
+        var x = document.getElementById("tips").innerHTML +="<li>"+tips202+"</li>";
+    }
+    if (counter == 3){
+        var x = document.getElementById("tips").innerHTML +="<li>"+tips105+"</li>";
+    }
+    if (counter == 4){
+        var img = document.createElement("img");
+
+        img.src = "arduino temperatursensor.png";
+        var src = document.getElementById("tips");
+
+        src.appendChild(img);
     }
     counter += 1;
 
@@ -102,10 +128,21 @@ function tipsFunction2() {
 function tipsFunction3() {
 
     if (counter == 1) {
-        var x = document.getElementById("tips").innerHTML = "<li>"+tips7+"</li>";
+        var x = document.getElementById("tips").innerHTML = "<li>"+tips301+"</li>";
     }
     if (counter == 2){
-        var x = document.getElementById("tips").innerHTML +="<li>"+tips8+"</li>";
+        var x = document.getElementById("tips").innerHTML +="<li>"+tips302+"</li>";
+    }
+    if (counter == 3){
+        var x = document.getElementById("tips").innerHTML +="<li>"+tips105+"</li>";
+    }
+    if (counter == 4){
+        var img = document.createElement("img");
+
+        img.src = "arduino fotorestistor.png";
+        var src = document.getElementById("tips");
+
+        src.appendChild(img);
     }
     counter += 1;
 

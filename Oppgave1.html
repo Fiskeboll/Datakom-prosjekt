@@ -50,7 +50,7 @@
     <div class="oppgavetekst">
         <h3>Oppgave 1 - Spenningsdeling</h3>
         <br>
-        <p> Du skal lage en krets med en arduino som skal måle spenning over <br> en motstand.
+        <p> Du skal lage en krets med en esp32 som skal måle spenning over <br> en motstand.
             Du vil få et bilde av kretsen og en oversikt over hva koden <br> skal inneholde,
             men du må prøve å skrive koden selv.  </p>
         <br>
@@ -68,6 +68,8 @@
             <ul>
                 <li>Verdier må leses av fra den analoge pinnen A0</li>
                 <li>Deretter må denne verdien regnes om til spenning</li>
+                <li>Tips1: den analoge pinnen leser av inntil 1024</li>
+                <li>Tips2: på esp32 trenger man ikke å multiplisere med spenningspåtrykket</li>
                 <li>Verdien for spenningen må sendes til seriell monitor</li>
             </ul>
     </div>
@@ -76,7 +78,7 @@
 
 
     <div class="krets">
-        <img src="Spenningsdeling2.png">
+        <img src="Schematic_Voltage_divider.png">
     </div>
 
     <!-- Buttons for getting data and stopping data -->

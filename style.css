@@ -9,7 +9,7 @@ body {
 }
 
 .darkMode {
-    background-color: #404040;
+    background-color: #40454a;
     color: #c8c8c8;
 }
 
@@ -30,7 +30,7 @@ nav {
     align-items: center;
     min-height: 10vh;
     font-family: 'Poppins', sans-serif;
-    background: linear-gradient(to right,#035336, #0c6c52);
+    background: linear-gradient(to right,#024237, #0c7366);
     color: #c8c8c8;
 }
 
@@ -156,7 +156,18 @@ main {
 
 .tipsButton {
     position: absolute;
-    background-color: #7fff00;
+    background-color: #97abbf;
+    font-family: 'Poppins', sans-serif;
+    border: none;
+    width: 10vw;
+    height: 10vh;
+    bottom: 8vh;
+    left: 5vw;
+}
+
+.darkModeTips {
+    position: absolute;
+    background-color: #0c7366;
     font-family: 'Poppins', sans-serif;
     border: none;
     width: 10vw;
